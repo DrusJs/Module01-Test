@@ -22,12 +22,7 @@ ul {
     list-style-type: none;
     padding-left: 0;
     margin: 0;
-}
-ul > li {
-    margin-right: 30px;
-}
-ul > li:last-child {
-    margin-right: 0;
+    gap: 30px;
 }
 a {
     color: rebeccapurple;
@@ -53,11 +48,18 @@ section {
     padding: 5px 20px;
     margin-bottom: 20px;
 }
+.result {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
 .link {
     background-color: rebeccapurple;
     color: white;
     padding: 8px 15px;
-    margin-left: 10px;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
 }
 .post {
     padding-bottom: 20px;
